@@ -11,6 +11,7 @@ const corsOptions = {
   origin: ["https://rentify-vfod.vercel.app"],
   methods: ["GET", "POST", "DELETE", "PUT"],
   credentials: true, // Enable credentials (cookies, authorization headers, etc.)
+  optionsSuccessStatus: 200,
 };
 //Initilize Application
 const app = express();

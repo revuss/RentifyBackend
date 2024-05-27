@@ -17,6 +17,8 @@ const deletePropertyLike = require("../controllers/GET/DeleteLikeController");
 router.use(
   cors({
     credentials: true,
+    optionsSuccessStatus: 200,
+    methods: ["GET", "POST", "DELETE", "PUT"],
     origin: ["https://rentify-vfod.vercel.app"],
   })
 );

@@ -28,7 +28,13 @@ const loginUser = async (req, res) => {
       { expiresIn: "1h" }
     );
 
-    res.cookie("token", token, { httpOnly: true }).json(user);
+    res
+      .cookie("token", token, {
+        httpOnly: true,
+        secure: true,
+        sameSite: "None",
+      })
+      .json(user);
   } catch (error) {
     return res.status(500).send("Internal Server Error");
   }
