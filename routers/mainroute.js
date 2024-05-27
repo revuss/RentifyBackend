@@ -14,7 +14,12 @@ const deleteProperty = require("../controllers/GET/DeleteController");
 const LikedUserProperties = require("../controllers/GET/UserLikedProperties");
 const deletePropertyLike = require("../controllers/GET/DeleteLikeController");
 
-router.use(cors({ credentials: true, origin: "http://localhost:4200" }));
+router.use(
+  cors({
+    credentials: true,
+    origin: "https://rentifybackend-production.up.railway.app",
+  })
+);
 router.get("/", (req, res) => {
   res.send("Welcome to the Home Page");
 }); // worked
