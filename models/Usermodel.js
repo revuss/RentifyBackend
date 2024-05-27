@@ -37,7 +37,7 @@ const userSchema = new Schema({
   likes: [
     {
       type: Schema.Types.ObjectId,
-      ref: "User",
+      ref: "Properties",
     },
   ],
   createdAt: {

@@ -5,7 +5,6 @@ const getAllProperties = async (req, res) => {
     const properties = await Properties.find().exec();
     res.status(200).json({ properties });
   } catch (error) {
-    console.error("Error fetching properties:", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };

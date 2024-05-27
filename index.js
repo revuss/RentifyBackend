@@ -8,7 +8,8 @@ const jwt = require("jsonwebtoken");
 const PORT = process.env.PORT;
 
 const corsOptions = {
-  origin: "http://localhost:4200", // Your frontend domain
+  origin: "https://rentify-vfod.vercel.app", // Your frontend domain
+  methods: ["GET", "POST", "DELETE", "PUT"],
   credentials: true, // Enable credentials (cookies, authorization headers, etc.)
 };
 //Initilize Application

@@ -30,7 +30,6 @@ const loginUser = async (req, res) => {
 
     res.cookie("token", token, { httpOnly: true }).json(user);
   } catch (error) {
-    console.error("An error occurred:", error);
     return res.status(500).send("Internal Server Error");
   }
 };

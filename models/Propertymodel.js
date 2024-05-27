@@ -20,8 +20,8 @@ const propertySchema = new Schema({
     required: true,
   },
   propertyBathrooms: { type: Number, required: true },
-  hospitalsNearby: { type: Number, required: true },
-  collegesNearby: { type: Number, required: true },
+  hospitalsNearby: { type: String, required: true },
+  collegesNearby: { type: String, required: true },
   createdBy: {
     type: Schema.Types.ObjectId,
     ref: "User",
