@@ -19,7 +19,7 @@ router.use(
     credentials: true,
     optionsSuccessStatus: 200,
     methods: ["GET", "POST", "DELETE", "PUT"],
-    origin: "*",
+    origin: ["https://rentify-vfod.vercel.app"],
   })
 );
 router.get("/", (req, res) => {
