@@ -30,7 +30,7 @@ const loginUser = async (req, res) => {
 
     res
       .cookie("token", token, {
-        domain: "https://rentify-vfod.vercel.app",
+        domain: "*",
         expires: 1 / 86400,
         path: "/",
         httpOnly: true,
