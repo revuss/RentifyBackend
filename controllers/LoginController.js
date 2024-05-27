@@ -30,9 +30,6 @@ const loginUser = async (req, res) => {
 
     res
       .cookie("token", token, {
-        domain: "*",
-        expires: 1 / 86400,
-        path: "/",
         httpOnly: true,
         secure: true,
         sameSite: "None",
