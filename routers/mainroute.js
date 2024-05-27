@@ -17,7 +17,7 @@ const deletePropertyLike = require("../controllers/GET/DeleteLikeController");
 router.use(
   cors({
     credentials: true,
-    origin: "https://rentifybackend-production.up.railway.app",
+    origin: ["https://rentify-vfod.vercel.app"],
   })
 );
 router.get("/", (req, res) => {
